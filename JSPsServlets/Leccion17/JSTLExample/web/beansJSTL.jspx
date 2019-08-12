@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : beansJSTL
+    Created on : 03/10/2018, 06:34:38
+    Author     : Diego
+-->
+<jsp:root 
+    xmlns:c="http://java.sun.com/jsp/jstl/core" 
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+    version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
+
+    <head>
+        <title>JavaBeans and JSTL</title>
+    </head>
+    
+    <body>
+        <h1>Loop a list of rectangles javabeans</h1>
+        
+        <jsp:useBean id="rectangleOne" class="beans.Rectangle">
+            <c:set target="${rectangleOne}" property="base" value="2" ></c:set>
+            <c:set target="${rectangleOne}" property="height" value="4" ></c:set>
+        </jsp:useBean>
+        <jsp:useBean id="rectangleTwo" class="beans.Rectangle">
+            <c:set target="${rectangleTwo}" property="base" value="3" ></c:set>
+            <c:set target="${rectangleTwo}" property="height" value="5" ></c:set>
+        </jsp:useBean>
+        <jsp:useBean id="rectangles" class="beans.ListRectangle">
+            <c:set target="${rectangles}" property="rectangle" value="${rectangleOne}" ></c:set>
+            <c:set target="${rectangles}" property="rectangle" value="${rectangleTwo}" ></c:set>
+        </jsp:useBean>
+        
+        <ul>
+            <c:forEach varStatus="status" var="rectangle" items="${rectangles.list}" >
+                <li>
+                    Rectangle ${status.count}
+                    Base ${rectangle.base}
+                    Height ${rectangle.height}
+                    Area ${rectangle.base * rectangle.height}
+                </li>
+            </c:forEach>
+        </ul>
+        <br/>
+        <a href="index.jsp">To index...</a>
+    </body>
+
+</jsp:root>

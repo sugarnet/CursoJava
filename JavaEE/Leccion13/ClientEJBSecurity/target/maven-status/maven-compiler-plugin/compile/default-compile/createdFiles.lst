@@ -1,0 +1,4 @@
+test\ClientPersonService.class
+test\ClientPersonServiceWithIP.class
+ar\com\dss\sga\domain\Person.class
+ar\com\dss\sga\service\PersonServiceRemote.class

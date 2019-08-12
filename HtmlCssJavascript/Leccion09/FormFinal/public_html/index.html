@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="validations.js"></script>
+    </head>
+    <body>
+        <form name="form1" action="/recursoEnServidor" method="post" onsubmit="return validarForm(this);">
+            <input type="hidden" name="oculto" value="valorOculto">
+            <table id="one-column-emphasis">
+                <caption>Formulario registro de datos</caption>
+                <tr>
+                    <td class="oce-first">
+                        Usuario: (*)
+                    </td>
+                    <td>
+                        <input class="default" type="text" name="usuario" placeholder="Escribir usuario" onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Password: (*)
+                    </td>
+                    <td>
+                        <input class="default" type="password" name="password" onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iacute;a de inter&eacute;s: (*)
+                    </td>
+                    <td>
+                        Java <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                        .Net <input type="checkbox" name="tecnologia" value="net">
+                        &nbsp;&nbsp;&nbsp;
+                        PHP <input type="checkbox" name="tecnologia" value="php">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iacute;a de inter&eacute;s: (*)
+                    </td>
+                    <td>
+                        Hombre <input type="radio" name="genero" value="H">
+                        &nbsp;&nbsp;&nbsp;
+                        Mujer <input type="radio" name="genero" value="M">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupaci&oacute;n: (*)
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="">Seleccione</option>
+                            <option value="1">Profesor</option>
+                            <option value="2">Ingeniero</option>
+                            <option value="3">Jubilado</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        M&uacute;sica favorita:
+                    </td>
+                    <td>
+                        <select name="musica" multiple class="default">
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                            <option value="salsa">Salsa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Comentarios:
+                    </td>
+                    <td>
+                        <textarea name="comentarios" cols="30" rows="2" class="default" onfocus="this.select();" placeholder="Escribe texto"></textarea>
+                    </td>
+                </tr>
+                <tr class="botones">
+                    <td>
+                        <input type="reset" value="Limpiar" class="default">
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default">
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>

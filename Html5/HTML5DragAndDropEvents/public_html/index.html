@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Drag and Drop Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                $("img[id^=img]").bind("dragstart", manageDragStart);
+                
+                $("#zoneDrag").bind({"dragover": manageDragOver, "drop": manageDrop});
+                
+                $.event.addProp("dataTransfer");
+                
+                function manageDragStart(e) {
+                console.log("Launching dragstart...", e.target.id);
+                e.dataTransfer.setData("text/html", this.id);
+                }
+
+                function manageDragOver(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    console.log("Launching dragover...", e.target.id);
+                }
+
+                function manageDrop(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    console.log("Starting drop...", e.target.id);
+
+                    var idImg = e.dataTransfer.getData("text/html");
+                    $("#out").append(idImg + " ");
+                    e.target.appendChild(document.getElementById(idImg));
+                }
+            });
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Drag and Drop Events</h1>
+        <figure>
+            <img src="resources/img1.jpg" id="img1" alt="img1" />
+            <img src="resources/img2.jpg" id="img2" alt="img2" />
+            <img src="resources/img3.jpg" id="img3" alt="img3" />
+            <img src="resources/img4.jpg" id="img4" alt="img4" />
+            <figcaption>Images for drag</figcaption>
+        </figure>
+        <h3>Drag your images here:</h3>
+        <div id="zoneDrag"></div>
+        <h3>Results:</h3>
+        <div id="out"></div>
+    </body>
+</html>

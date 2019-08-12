@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>File Managment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function(){
+                $("#file").change(selectFile);
+                
+                function selectFile(e) {
+                    console.log("You have selected: ", e.target.files[0].name);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>File Managment</h1>
+        <form>
+            <label for="file">File</label>
+            <input type="file" id="file" />
+        </form>
+    </body>
+</html>

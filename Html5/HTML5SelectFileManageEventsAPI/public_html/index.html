@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Files Managment (events)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function(){
+                
+                var file = null;
+                var reader = null;
+                
+                $("#file").change(selectFile);
+                $("#startReading").click(startReading);
+                $("#stopReading").click(stopReading);
+                
+                function resetValues() {
+                    $("#progress").empty();
+                    $("#reading").text(0);
+                    $("#progressbar").val(0);
+                }
+                
+                function selectFile(e) {
+                    resetValues();
+                    file = e.target.files[0];
+                    
+                    $("#nameFile").html(file.name + ", size " + file.size);
+                }
+                
+                function startReading(e) {
+                    resetValues();
+                    
+                    if(file != null) {
+                        reader = new FileReader();
+                        
+                        reader.onloadstart = function(e) {
+                            $("#progress").append("<p>Init read of file (onloadstart)</p>");
+                        }
+                        reader.onloadend = function(e) {
+                            $("#progress").append("<p>Finish read of file (onloadend)</p>");
+                        }
+                        
+                        reader.onload = function(e){
+                            $("#progress").append("<p>Read of file completed (onload)</p>");
+                            
+                        }
+                        
+                        reader.onprogress = function(e) {
+                            if(e.lengthComputable) {
+                                var calc = Math.round((e.loaded / e.total) * 100);
+                                $("#reading").text(calc);
+                                $("#progressbar").val(calc);
+                            }
+                        }
+                        
+                        reader.onerror = function() {
+                            
+                            $("#progress").append("<p>Read error (onerror)</p>");
+                        }
+                        
+                        reader.onabort = function() {
+                            
+                            $("#progress").append("<p>Read abort (onabort)</p>");
+                        }
+                        
+                        reader.readAsBinaryString(file);
+                    } else {
+                        console.log("Select a file");
+                        
+                    }
+                }
+                
+                function stopReading(e) {
+                    if(reader) {
+                        reader.abort();
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>File Managment</h1>
+        <form>
+            <label for="file">Select File</label>
+            <input type="file" id="file" />
+        </form>
+        
+        <p>File name: <span id="nameFile"></span></p>
+        <p>Read content file:</p>
+        <button id="startReading">Start reading</button>
+        <button id="stopReading">Stop reading</button>
+        <p>Reading progress: <span id="reading"></span>%</p>
+        <progress id="progressbar" value="0" max="100"></progress>
+        <div id="progress"></div>
+    </body>
+</html>

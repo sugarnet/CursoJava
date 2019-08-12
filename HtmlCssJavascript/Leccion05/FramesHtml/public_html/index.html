@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Frames</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- Frame externo -->
+    <!-- creamos un frame externo de dos columnas -->
+    <frameset cols="25%,*" frameborder="0" framespacing="0" border="0">
+        <!-- frame izquierdo -->
+        <frame src="navigation.html" name="navigation">
+            <!-- frame derecho, es otro frameset -->
+            <!-- tiene dos renglones este frame -->
+            <frameset rows="30%,*">
+                <!-- frame superior -->
+                <frame src="title.html" name="title" scrolling="no">
+                <!-- frame inferior -->
+                <frame src="content.html" name="content">
+            </frameset>
+            <noframes>
+                Este navegador no puede mostrar los frames
+            </noframes>
+    </frameset>
+</html>

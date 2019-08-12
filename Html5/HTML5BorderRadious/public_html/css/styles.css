@@ -1,0 +1,48 @@
+#container div {
+    background: yellowgreen;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+#container {
+    width: 600px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    border: dashed gray;
+
+}
+
+#one {
+/*    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;*/
+    border-radius: 10px;
+}
+
+#two {
+/*    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;*/
+    border-radius: 3px/15px;
+}
+
+#three {
+/*    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;*/
+    border-radius: 5px/80px;
+}
+#four {
+/*    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    top-left top-right bottom-right bottom-left*/
+    border-radius: 0px 30px 0px 30px;
+}
+
+#five {
+    border-radius: 10px;
+    
+    /*right down blur color*/
+    box-shadow: 3px 3px 4px gray;
+}

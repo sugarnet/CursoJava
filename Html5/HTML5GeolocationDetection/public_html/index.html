@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Geolocation Monitoring</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function(){
+                
+                navigator.geolocation.watchPosition(showCoords, showErrors,
+                {maximumAge: 1000, timeout: 300000, enableHighAccuracy: true});
+                
+                
+                 function showCoords(position) {
+                     var latitude = position.coords.latitude;
+                     var longitude = position.coords.longitude;
+                     
+                     
+                     $("#result").html("");
+                     $("#result").append("<p>Latitude: " + latitude + "</p>");
+                     $("#result").append("<p>Longitude: " + longitude + "</p>");
+                 }
+                 
+                 function showErrors(error) {
+                     switch(error.code) {
+                         case error.PERMISSION_DENIED:
+                             console.log("Permission denied");
+                             break;
+                         case error.POSITION_UNAVAILABLE:
+                             console.log("Position unavailable");
+                             break;
+                         case error.TIMEOUT:
+                             console.log("Timeout error");
+                             break;
+                         default:
+                             console.log("Unknown error");
+                             break;
+                             
+                     }
+                 }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Geolocation monitoring</h1>
+        <div id="result"></div>
+    </body>
+</html>

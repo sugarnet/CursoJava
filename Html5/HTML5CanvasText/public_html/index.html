@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas Text</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                
+                var canvas = document.getElementById("canvas1");
+                var context = canvas.getContext("2d");
+                
+                
+                var text = "Hello World!!!";
+                context.font = "italic 50pt Calibri";
+                context.fillStyle = "yellowgreen";
+                context.strokeStyle = "gray";
+                context.fillText(text, 130, 100);
+                context.strokeText(text, 130, 100);
+                
+                context.font = "50px Verdana";
+                var gradient = context.createLinearGradient(0, 0, canvas.width, 0);
+                gradient.addColorStop("0", "magenta");
+                gradient.addColorStop("0.5", "blue");
+                gradient.addColorStop("1", "red");
+                
+                context.fillStyle = gradient;
+                context.fillText("Hello World with gradient!!!", 40, 200);
+                
+                
+            });
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Canvas Text</h1>
+        
+        <canvas id="canvas1" width="800" height="400" style="border: grey dotted 5px;"></canvas>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Files Managment (events)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function(){
+                
+                navigator.geolocation.getCurrentPosition(showCoords);
+                
+                
+                 function showCoords(position) {
+                     var latitude = position.coords.latitude;
+                     var longitude = position.coords.longitude;
+                     
+                     $("#result").append("<p>Latitude: " + latitude + "</p>");
+                     $("#result").append("<p>Longitude: " + longitude + "</p>");
+                 }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Geolocation detection</h1>
+        <div id="result"></div>
+    </body>
+</html>

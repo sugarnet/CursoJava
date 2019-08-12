@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Results</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script src="js/modernizr/modernizr-v3.6.0.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+              
+                if(sessionStorage.getItem("list")) {
+                    $("#message").html("<h3>Saved Data:</h3>");
+                    $("#result").text(sessionStorage.getItem("list"));
+                    
+                } else {
+                    
+                    $("#message").html("<h3>LocalStorage Empty</h3>");
+                }
+                
+                
+            });
+            
+        </script>
+    </head>
+    <body>
+        <h1>Results</h1>
+        
+       
+        <div id="message"></div>
+        <div id="result"></div>
+        
+        <br>
+        
+        <a href="index.html">Return to index...</a>
+    </body>
+</html>

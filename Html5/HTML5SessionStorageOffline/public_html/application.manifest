@@ -1,0 +1,9 @@
+CACHE
+index.html
+results.html
+js\jquery\jquery-v3.3.1.js
+js\modernizr\modernizr-v3.6.0.js
+imgs\not-available.jpg
+
+FALLBACK
+http://www.monacolist.com/wp-content/uploads/2017/02/100564_available_image.jpg imgs\not-available.jpg

@@ -1,0 +1,68 @@
+/*div > p {
+    color: red;
+    background-color: yellow;
+}*/
+
+/*div + p {
+    color: red;
+    background-color: yellow;
+}*/
+
+/*div ~ p {
+    color: red;
+    background-color: yellow;
+}*/
+
+a[href^=http] {
+    color: red;
+}
+
+a[href$=".html"] {
+    color: blueviolet;
+}
+
+a[href$=".pdf"] {
+    color: darkred;
+    background: url(../images/pdf.png) no-repeat right;
+    padding-right: 25px;
+}
+
+h2:first-child {
+    color: blue;
+}
+
+h2:last-of-type {
+    color: yellowgreen;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: green;
+}
+
+/*li:nth-child(3n) {
+    color: purple;
+}*/
+
+/*li:nth-child(3n+2) {
+    color: purple;
+}*/
+
+/*li:nth-child(-1n+4) {
+    color: purple;
+}*/
+
+/*li:nth-last-child(4) {
+    color: purple;
+}*/
+
+/*li:nth-last-child(1n+7) {
+    color: purple;
+}*/
+
+li:nth-child(1n+8), li:nth-last-child(1n+8) {
+    color: purple;
+}

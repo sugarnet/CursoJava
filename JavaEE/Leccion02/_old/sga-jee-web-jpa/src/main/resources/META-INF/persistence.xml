@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="PersonPU" transaction-type="JTA">
+        <jta-data-source>sga</jta-data-source>
+        <properties>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+            <property name="eclipselink.canonicalmodel.subpackage" value="prod"/>
+        </properties>
+    </persistence-unit>
+    <!--Unidad de Persistencia para consola de JPQL-->
+    <persistence-unit name="ConsolaJpqlPU" transaction-type="RESOURCE_LOCAL" >
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>ar.com.dss.sga.domain.Person</class>
+        <class>ar.com.dss.sga.domain.User</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sga?serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="admin"/>
+            <property name="javax.persistence.jdbc.useSSL" value="false"></property>
+            <property name="javax.persistence.jdbc.serverTimezone" value="UTC"></property>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+            <property name="eclipselink.canonicalmodel.subpackage" value="dev"/>
+        </properties>
+    </persistence-unit>
+</persistence>

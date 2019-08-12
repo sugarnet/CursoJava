@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas Rectangle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                
+                var context = $("canvas")[0].getContext("2d");
+                context.strokeStyle = "yellow";
+                context.lineWidth = 7;
+                context.strokeRect(10, 10, 200, 100);
+                context.fillStyle = "yellowgreen";
+                context.fillRect(10, 10, 200, 100);
+                
+            });
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Canvas Rectangle</h1>
+        
+        <canvas id="canvas" width="600" height="400"></canvas>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Formulario Web</h1>
+            <fieldset>
+                <legend>Detalles de contacto</legend>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" 
+                           autofocus="" 
+                           placeholder="Write your name"
+                           name="name"
+                           required="required"
+                           pattern="[a-zA-Z\s]{5,}"
+                           />
+                    <span class="invalid">*The name is required</span>
+                    <label for="email">Email:</label>
+                    <input type="email" 
+                           placeholder="Write your email"
+                           name="email"
+                           required="required"
+                           />
+                    <span class="invalid">*The email is required</span>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" 
+                           placeholder="Write your phone"
+                           name="phone"
+                           required="required"
+                           />
+                    <span class="invalid">*The phone is required</span>
+                    <label for="country">Country:</label>
+                    <input list="countries" 
+                           placeholder="Write your country"
+                           name="country"
+                           />
+                    <datalist id="countries">
+                        <option>Argentina</option>
+                        <option>Bolivia</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>Uruguay</option>
+                        <option>Paraguay</option>
+                    </datalist>
+                    
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" 
+                           name="age"
+                           min="18"
+                           max="65"
+                           />
+                    <label for="Birthday">Birthday:</label>
+                    <input type="date" 
+                           name="birthday"
+                           min="1900-01-01"
+                           max="2100-01-01"
+                           />
+                    
+                    <div>
+                        <input type="submit" value="Send" id="send"/>
+                    </div>
+                </form>
+            </fieldset>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas Circle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                
+                var canvas = document.getElementById("canvas1");
+                var context = canvas.getContext("2d");
+                
+                var centerX = canvas.width / 2;
+                var centerY = canvas.height / 2;
+                var radius = 50;
+                
+                context.beginPath();
+                context.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+                context.lineWidth = 5;
+                context.strokeStyle = "yellow";
+                context.stroke();
+                context.fillStyle = "yellowgreen";
+                context.fill();
+                
+                context.beginPath();
+                context.arc(60, 60, radius, 0, 0.5*Math.PI);
+                context.stroke();
+                
+                context.beginPath();
+                context.arc(500, 60, radius, 0, -0.5*Math.PI, true);
+                context.stroke();
+                
+                
+            });
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Canvas Circle</h1>
+        
+        <canvas id="canvas1" width="600" height="400" style="border: grey dotted 5px;"></canvas>
+    </body>
+</html>

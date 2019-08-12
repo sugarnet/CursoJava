@@ -1,0 +1,6 @@
+ar\com\dss\sga\web\PeopleServlet.class
+ar\com\dss\sga\service\PersonServiceRemoteImpl.class
+ar\com\dss\sga\service\PersonServiceImpl.class
+ar\com\dss\sga\domain\Person.class
+ar\com\dss\sga\service\PersonService.class
+ar\com\dss\sga\service\PersonServiceRemote.class

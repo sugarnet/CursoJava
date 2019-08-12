@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/07/2018, 08:21:17
+    Author     : almis
+*/
+body {
+    background: #ffffff;
+}
+
+img {
+    border: 0;
+}
+
+h1 {
+    padding: 5px 5px 0 5px;
+    margin: 0 0 15px 0;
+    color: #2b7c92;
+    font-size: 2em;
+}
+
+div.tab {
+    background-image: url(images/izqTab.gif);
+    display: block;
+    float: left;
+    height: 21px;
+    padding: 0;
+    margin: 0 1px 0 0;
+    background-repeat: no-repeat; /*Por defecto las imágenes se repiten en todo el espacio que tengan. Esta propiedad hace que lo contrario*/
+}
+
+div.tab div {
+    background-image: url(images/derTab.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 21px;
+    float: left;
+    margin: 0;
+}
+
+div.tab div a {
+    /*las imagenes de la izquierda y derecha tienen un ancho de 8px por lo tanto dejamos este espacio para que se completen las esquinas*/
+    margin: 0 8px;
+    /*las imagenes tienen un alto de 21px*/
+    height: 21px;
+    line-height: 21px;
+    background-image: url(images/centroTab.gif);
+    display: block;
+    text-decoration: none;
+    vertical-align: middle;
+    float: left;
+    /*por default se repite la imagen pero lo hacemos explícito*/
+    background-repeat: repeat;
+}
+
+/*solo hay un elemento activo dentro de la página por eso se utiliza id (#) en lugar de clase (.)*/
+#actual {
+    background-image: url(images/actIzqTab.gif);
+}
+
+#actual div {
+    background-image: url(images/actDerTab.gif);
+}
+
+#actual div a {
+    background-image: url(images/actCentroTab.gif);
+}
+
+a:link, a:visited {
+    color: #226275;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    color: #39a5c4;
+}
+
+

@@ -1,0 +1,7 @@
+ar\com\dss\sga\service\PersonServiceImpl.class
+ar\com\dss\sga\client\ClientePersonaService.class
+ar\com\dss\sga\client\ClientePersonaServiceConIP.class
+ar\com\dss\sga\service\PersonServiceRemoteImpl.class
+ar\com\dss\sga\domain\Person.class
+ar\com\dss\sga\service\PersonService.class
+ar\com\dss\sga\service\PersonServiceRemote.class

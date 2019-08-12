@@ -1,0 +1,170 @@
+.wrapper {
+    position: relative;
+    float: left;
+    left: 0px;
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+.left1 {
+    display: table;
+    position: relative;
+    float: left;
+    left: 5px;
+    width: 140px;
+    height: 100px;
+    border: 1px dashed gray;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+body {
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 90%;
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#div1 {
+    background: #00FFFF;
+    color: gray;
+}
+
+.left2 {
+    display: table;
+    position: relative;
+    float: left;
+    left: 15px;
+    width: 140px;
+    height: 100px;
+    border: 1px dashed gray;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#div2 {
+    background: #FF0;
+    color: gray;
+}
+
+.left3 {
+    display: table;
+    position: relative;
+    float: left;
+    left: 25px;
+    width: 140px;
+    height: 100px;
+    border: 1px dashed gray;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#div3 {
+    background: rgb(198, 226, 255);
+    color: gray;
+}
+
+.left4 {
+    display: table;
+    position: relative;
+    float: left;
+    left: 35px;
+    width: 140px;
+    height: 100px;
+    border: 1px dashed gray;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#div4 {
+    background: rgb(0%, 20%, 80%);
+}
+
+#div5 {
+    background: chocolate;
+}
+
+#div6 {
+    background: rgb(198, 226, 255);
+    background: rgba(198, 226, 255, 0.25);
+    color: gray;
+}
+
+#div7 {
+    background: rgb(0%, 20%, 80%);
+    background: rgba(0%, 20%, 80%, 0.5);
+}
+
+#div8 {
+    background: hsl(270, 90%, 60%);
+}
+
+#div9 {
+    background: hsla(270, 90%, 60%, 0.5);
+}
+
+#div10 {
+    background: chocolate;
+    opacity: 0.5;
+}
+
+#div11 {
+    color: gray;
+}
+
+img {
+    width: 110px;
+    height: 70px;
+}
+img:hover {
+    opacity: 0.5;
+}
+
+#div12 {
+    background: url(../images/lord.jpg) no-repeat;
+    background-color: rgb(234, 98, 14);
+}
+
+div.transbox {
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin-top: 55px;
+    font-size: 80%;
+    color: #000;
+}
+#div13 {
+    background: linear-gradient(rgba(200, 3, 41, 1), rgba(109, 0, 25, 1));
+}
+
+#div14 {
+    background: linear-gradient(to right, #2F2727, #1A82F7, #2F2727, #1A82F7, #2F2727);
+}
+
+#div15 {
+    background: radial-gradient(circle, #1A82F7, #2F2727);
+}
+
+#div16 {
+    background: radial-gradient(closest-corner at 80% 20%, #1A82F7, #2F2727);
+}
+
+#div17 {
+    background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+}

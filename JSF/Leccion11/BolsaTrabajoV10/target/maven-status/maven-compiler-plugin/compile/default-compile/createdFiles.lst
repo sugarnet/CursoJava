@@ -1,0 +1,6 @@
+beans\helper\LocalidadHelper.class
+beans\ciclovida\DepuracionListener.class
+beans\backing\VacanteForm.class
+beans\model\Candidato.class
+beans\domain\Localidad.class
+beans\service\LocalidadService.class

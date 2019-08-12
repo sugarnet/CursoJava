@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: robotoregular, Arial, Georgia;
+    color: gray;
+}
+
+h1 {
+    text-shadow: 5px 5px 8px gray; 
+}
+
+h2 {
+    color: yellowgreen;
+}
+
+.cincel {
+    width: 200px;
+    height: 35px;
+    background: #CCC;
+    text-shadow: 1px 1px white, -1px -1px #333;
+    font-size: x-large;
+    text-align: center;
+    color: #d1d1d1;
+    font-weight: bold;
+}
+
+.neon {
+    margin-top: 20;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    background: black;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 20px #ff00de, 0 0 70px #ff00de;
+}
+
+p {
+    text-align: justify;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px dashed gray;
+}

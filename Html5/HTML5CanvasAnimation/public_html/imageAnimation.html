@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            var x = 0;
+            var direction;
+            var image;
+            var canvas;
+            var context;
+            
+            $(document).ready(function(){
+                
+                animar();
+                
+            });
+            
+            function animar() {
+                canvas = document.getElementById("canvas1");
+                context = canvas.getContext("2d");
+                image = new Image();
+                
+                image.onload = function() {
+                    context.clearRect(0, 0, canvas.width, canvas.width);
+                    context.drawImage(image, x, 0);
+                    updateDraw();
+                    setInterval(animar(), 1000);
+                };
+                
+                image.src = "images/duke.png";
+            }
+            
+            function updateDraw() {
+                x++;
+                
+                if(x > context.canvas.width) {
+                    x = 0;
+                }
+            }
+            
+            function defineDirection() {
+                var canvas = document.getElementById("canvas1");
+                
+                if(x == 0) {
+                    direction = "right";
+                } else if(x == (canvas.width - widthRectangle)) {
+                    direction = "left";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Canvas Animation</h1>
+        
+        <canvas id="canvas1" width="800" height="400" style="border: grey dotted 5px;"></canvas>
+    </body>
+</html>

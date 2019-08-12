@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script src="js/modernizr/modernizr-v3.6.0.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                $("#list").blur(function(){
+                    localStorage.setItem("list", $("#list").html());
+                    //location.reload();
+                });
+                
+                $("#clear").click(function(){
+                    localStorage.removeItem("list");
+                    //location.reload();
+                });
+                
+                window.addEventListener("storage", listeningEvent, false);
+                
+                function listeningEvent(e) {
+                    alert("Data moving: ", e.storageArea.list);
+                }
+                
+                if(localStorage.getItem("list")) {
+                    $("#message").html("<h3>Saved Data:</h3>");
+                    $("#result").text(localStorage.getItem("list"));
+                    $("#list").html(localStorage.getItem("list"));
+                    
+                } else {
+                    
+                    $("#message").html("<h3>LocalStorage Empty</h3>");
+                }
+                
+                
+            });
+            
+        </script>
+    </head>
+    <body>
+        <h1>Manejo de localStorage</h1>
+        
+        <div>
+            <ul id="list" contenteditable="true">
+                <li></li>
+            </ul>
+        </div>
+        
+        <input type="button" id="clear" value="Clear" />
+        <div id="message"></div>
+        <div id="result"></div>
+    </body>
+</html>

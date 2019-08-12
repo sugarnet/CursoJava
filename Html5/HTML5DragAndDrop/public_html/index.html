@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Drag and Drop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                $("#img1").bind("dragstart", manageDragStart);
+            });
+            
+            function manageDragStart(e) {
+                console.log("Starting drag...", e.target.id);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Drag and Drop</h1>
+        <h3>Drag your images here:</h3>
+        <img src="resources/img1.jpg" id="img1" alt="img1" />
+        <div id="zoneDrag"></div>
+        <h3>Results:</h3>
+        <div id="out"></div>
+    </body>
+</html>

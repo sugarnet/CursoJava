@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Drag and Drop Files Managmentt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery/jquery-v3.3.1.js"></script>
+        <script type="text/javascript" >
+            
+            $(document).ready(function(){
+                $("#zoneDrag").bind({
+                    "drop": manageDrop,
+                    "dragover": manageDragover
+                });
+            });
+            
+            function manageDragover(e) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+            
+            function manageDrop(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                
+                var dataTransfer = e.dataTransfer || (e.originalEvent && e.originalEvent.dataTransfer);
+                var files = e.target.files || (dataTransfer && dataTransfer.files);
+                
+                $("#out").html("");
+                
+                for(var i = 0; i < files.length; i++) {
+                    var file = files[i];
+                    var data = "<p>Name: " + file.name + ", Size: " + 
+                            file.size + ", Type: " + file.type + "</p>";
+                    
+                    $("#out").append(data);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Drag and Drop Files Managment</h1>
+        <h3>Drag your files here:</h3>
+        <div id="zoneDrag"></div>
+        <h3>Results:</h3>
+        <div id="out"></div>
+    </body>
+</html>

@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="test.TestEntities" time="309.503" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
+    <property name="java.vm.version" value="25.91-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\workspace\GlobalMentoring\JavaEE\Leccion02\sga-jee-web-jpa"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\workspace\GlobalMentoring\JavaEE\Leccion02\sga-jee-web-jpa"/>
+    <property name="java.runtime.version" value="1.8.0_91-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Diego\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files (x86)\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Users\Diego\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files (x86)\apache-maven-3.6.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files (x86)\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Diego"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Diego"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files (x86)\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="test.TestEntities" name="testEJB" time="309.503">
+    <error type="javax.ejb.EJBTransactionRolledbackException">javax.ejb.EJBTransactionRolledbackException
+	at com.sun.ejb.containers.BaseContainer.mapLocal3xException(BaseContainer.java:2376)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2158)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy231.listPeople(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:411)
+	at org.jboss.weld.module.ejb.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.module.ejb.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:68)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ar.com.dss.sga.dao.PersonDao$481188402$Proxy$_$$_Weld$EnterpriseProxy$.listPeople(Unknown Source)
+	at ar.com.dss.sga.service.PersonServiceImpl.listPeople(PersonServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy181.listPeople(Unknown Source)
+	at test.TestEntities.testEJBPersonService(TestEntities.java:107)
+	at test.TestEntities.testEJB(TestEntities.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.ejb.TransactionRolledbackLocalException: Exception thrown from bean
+	at com.sun.ejb.containers.EJBContainerTransactionManager.checkExceptionClientTx(EJBContainerTransactionManager.java:666)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:511)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4600)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	... 80 more
+Caused by: java.lang.IllegalStateException: Unable to retrieve EntityManagerFactory for unitName PersonPU
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.init(EntityManagerWrapper.java:138)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper._getDelegate(EntityManagerWrapper.java:171)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.createNamedQuery(EntityManagerWrapper.java:515)
+	at ar.com.dss.sga.dao.PersonDaoImpl.listPeople(PersonDaoImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:72)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 78 more
+</error>
+    <system-out>06:19:52 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+06:19:52 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.2.Final
+06:19:52 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+06:19:52 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+06:19:52 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+06:19:52 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+06:19:52 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator&apos;s class loader
+06:19:52 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+06:19:52 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]
+06:20:02 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+06:20:02 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+06:20:02 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+06:20:02 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+06:20:02 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator&apos;s class loader
+06:20:02 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+06:20:02 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+06:24:49 [main] INFO  org.jboss.weld.Version - WELD-000900: 3.0.0 (Final)
+06:24:55 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+06:24:55 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+06:24:55 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.hibernate.validator.internal.engine.DefaultParameterNameProvider
+06:24:55 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+06:24:55 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+06:24:55 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator&apos;s class loader
+06:24:55 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+06:24:56 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+06:24:56 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+06:24:56 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+06:24:56 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.hibernate.validator.internal.engine.DefaultParameterNameProvider
+06:24:56 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+06:24:56 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+06:24:56 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator&apos;s class loader
+06:24:56 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+06:24:56 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap 
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startContainer 
+06:24:56 [main] DEBUG org.jboss.weld.Configuration - WELD-001902: Following configuration was detected and applied: {org.jboss.weld.bootstrap.concurrentDeployment=false, org.jboss.weld.bootstrap.preloaderThreadPoolSize=0, org.jboss.weld.nonPortableMode=false}
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startContainer &gt; initServices 
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - Using Weld modules: [weld-ejb, weld-jta, weld-web]
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.DefaultProxyInstantiator
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startContainer &gt; initServices (276 ms)
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startContainer &gt; builtinContexts 
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+06:24:56 [main] DEBUG org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%EjbRequestContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startContainer &gt; builtinContexts (153 ms)
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startContainer &gt; readDeploymentStructure 
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+06:24:56 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startContainer &gt; readDeploymentStructure (62 ms)
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startContainer (630 ms)
+06:24:56 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startInitialization 
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-transaction.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-transaction.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.cdi.transaction.TransactionalExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.cdi.transaction.TransactionalExtension@6107fce9]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.cdi.transaction.TransactionalExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.cdi.transaction.TransactionalExtension@6107fce9]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-servlet.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension@2df593ac]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-servlet.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension@2df593ac]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@6fa9cf83]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@6fa9cf83]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@4[com.sun.faces.cdi.CdiExtension@28791945]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@4[com.sun.faces.cdi.CdiExtension@28791945]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@342bb4db]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@6411cb24]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@6411cb24]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@14c84fd6]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@14c84fd6]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/com.ibm.jbatch.container.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension@42f41162]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/com.ibm.jbatch.container.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension@42f41162]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-servlet.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension@6a3e2ab3]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/com.ibm.jbatch.container.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension@617e89b5]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.cdi.transaction.TransactionScopedContextExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[org.glassfish.cdi.transaction.TransactionScopedContextExtension@55f0e377]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.cdi.transaction.TransactionScopedContextExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[org.glassfish.cdi.transaction.TransactionScopedContextExtension@55f0e377]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.cdi.internal.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/bean-validator-cdi.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.cdi.internal.ValidationExtension@8196ff1]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.hibernate.validator.cdi.internal.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/bean-validator-cdi.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.cdi.internal.ValidationExtension@8196ff1]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.hibernate.validator.cdi.internal.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/bean-validator-cdi.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.cdi.internal.ValidationExtension@5690126f]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.cdi.transaction.TransactionalExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.cdi.transaction.TransactionalExtension@3daeaf18]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.sse.impl.ServerSentEventCdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/web-sse.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.sse.impl.ServerSentEventCdiExtension@177b38b9]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] org.glassfish.sse.impl.ServerSentEventCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType&lt;T&gt;, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.sse.impl.ServerSentEventCdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/web-sse.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.sse.impl.ServerSentEventCdiExtension@177b38b9]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.cdi.transaction.TransactionScopedContextExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/weld-integration.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[org.glassfish.cdi.transaction.TransactionScopedContextExtension@7a65bdb]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@44328a5e]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@4[com.sun.faces.cdi.CdiExtension@2c58a2ce]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.jms.injection.JMSCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/gf-jms-injection.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@41[org.glassfish.jms.injection.JMSCDIExtension@69292ca6]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jms.injection.JMSCDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType&lt;T&gt;) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jms.injection.JMSCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/gf-jms-injection.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@41[org.glassfish.jms.injection.JMSCDIExtension@69292ca6]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] org.glassfish.sse.impl.ServerSentEventCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType&lt;T&gt;, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.sse.impl.ServerSentEventCdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/web-sse.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.sse.impl.ServerSentEventCdiExtension@7081d87d]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jms.injection.JMSCDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType&lt;T&gt;) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jms.injection.JMSCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/gf-jms-injection.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@41[org.glassfish.jms.injection.JMSCDIExtension@3e9c1840]
+06:24:57 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@4f58822a]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.glassfish.soteria.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.security.enterprise.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.soteria.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.security.enterprise.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.bootstrap.WeldExtension] with qualifiers [@Default]; n/a
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.jboss.weld.bootstrap.WeldExtension] with qualifiers [@Default]; n/a
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.faces.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@10d71079]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/jersey-cdi1x-transaction.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@272271e0]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000168: Extension bean deployed: Extension [class org.glassfish.soteria.cdi.CdiExtension] with qualifiers [@Default]; jar:file:/C:/Program%20Files/glassfish5/glassfish/modules/javax.security.enterprise.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.glassfish.soteria.cdi.CdiExtension@21ad2894]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startInitialization &gt; BeforeBeanDiscovery 
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionHolder is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c for [BackedAnnotatedType] public @RequestScoped @JerseyVetoed @WaeQualifier class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionHolder
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c for [BackedAnnotatedType] public final @Priority @Interceptor @JerseyVetoed @Transactional class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionMapper is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c for [BackedAnnotatedType] public @ApplicationScoped @JerseyVetoed class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionMapper
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.hibernate.validator.cdi.internal.ValidationExtension@8196ff1 for [BackedAnnotatedType] public @MethodValidated @Interceptor @Priority class org.hibernate.validator.cdi.internal.interceptor.ValidationInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000158: BeforeBeanDiscovery.addQualifier() called by org.glassfish.sse.impl.ServerSentEventCdiExtension@177b38b9 for interface org.glassfish.sse.api.ServerSentEventContext
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScope is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension@2df593ac for [BackedAnnotatedType] public @ApplicationScoped @JerseyVetoed class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScope
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$JaxRsParamProducer is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3 for [BackedAnnotatedType] public static @ApplicationScoped class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$JaxRsParamProducer
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000159: BeforeBeanDiscovery.addScope() called by com.sun.faces.flow.FlowCDIExtension@14c84fd6 for interface javax.faces.flow.FlowScoped
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class com.ibm.jbatch.container.cdi.BatchProducerBean is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.ibm.jbatch.container.cdi.BatchCDIInjectionExtension@42f41162 for [BackedAnnotatedType] public  class com.ibm.jbatch.container.cdi.BatchProducerBean
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorNever is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorNever
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorRequired is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorRequired
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class org.glassfish.cdi.transaction.TransactionalInterceptorSupports is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.cdi.transaction.TransactionalExtension@6107fce9 for [BackedAnnotatedType] public @Priority @Interceptor @Transactional class org.glassfish.cdi.transaction.TransactionalInterceptorSupports
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public @ApplicationScoped class com.sun.faces.push.WebsocketUserManager
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public @ApplicationScoped class com.sun.faces.push.WebsocketSessionManager
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public @SessionScoped class com.sun.faces.push.WebsocketChannelManager
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public static @ViewScoped class com.sun.faces.push.WebsocketChannelManager$ViewScope
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public @Dependent class com.sun.faces.cdi.InjectionPointGenerator
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.cdi.CdiExtension@28791945 for [BackedAnnotatedType] public @Dependent class com.sun.faces.cdi.WebsocketPushContextProducer
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000159: BeforeBeanDiscovery.addScope() called by com.sun.faces.application.view.ViewScopeExtension@6411cb24 for interface javax.faces.view.ViewScoped
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.bootstrap.WeldExtension@2030d2a8 for [BackedAnnotatedType] public @Vetoed @Interceptor @ActivateRequestContext @Priority class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.jboss.weld.bootstrap.WeldExtension@2030d2a8 for [BackedAnnotatedType] public @Vetoed @Interceptor @ActivateRequestContext @Priority class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @Interceptor @AutoApplySession @Priority class org.glassfish.soteria.cdi.AutoApplySessionInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @Interceptor @RememberMe @Priority class org.glassfish.soteria.cdi.RememberMeInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @Interceptor @LoginToContinue @Priority class org.glassfish.soteria.cdi.LoginToContinueInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @AutoApplySession @LoginToContinue @Typed class org.glassfish.soteria.mechanisms.FormAuthenticationMechanism
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @AutoApplySession @LoginToContinue @Typed class org.glassfish.soteria.mechanisms.CustomFormAuthenticationMechanism
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public  class org.glassfish.soteria.SecurityContextImpl
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public abstract interface  class javax.security.enterprise.identitystore.IdentityStoreHandler
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for [BackedAnnotatedType] public @Dependent class org.glassfish.soteria.identitystores.hash.Pbkdf2PasswordHashImpl
+06:24:57 [main] WARN  org.jboss.weld.Bootstrap - WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType&lt;?&gt;) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000162: BeforeBeanDiscovery.addAnnotatedType() called by com.sun.faces.flow.FlowDiscoveryCDIExtension@6fa9cf83 for [BackedAnnotatedType] public @Named @Dependent class com.sun.faces.flow.FlowDiscoveryCDIHelper
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startInitialization &gt; BeforeBeanDiscovery (288 ms)
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; startInitialization &gt; AfterTypeDiscovery 
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000166: AfterTypeDiscovery.getInterceptors() modified by org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider@4fa8b39c adds class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startInitialization &gt; AfterTypeDiscovery (7 ms)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for root_classes [bean count=2]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for root_classes [bean count=2]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for root_classes [bean count=2]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNever,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequired,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorSupports,
+  - class org.glassfish.soteria.cdi.AutoApplySessionInterceptor,
+  - class org.glassfish.soteria.cdi.RememberMeInterceptor,
+  - class org.glassfish.soteria.cdi.LoginToContinueInterceptor,
+  - class org.hibernate.validator.cdi.internal.interceptor.ValidationInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider [bean count=17]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider [bean count=17]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider [bean count=17]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNever,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequired,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorSupports,
+  - class org.glassfish.soteria.cdi.AutoApplySessionInterceptor,
+  - class org.glassfish.soteria.cdi.RememberMeInterceptor,
+  - class org.glassfish.soteria.cdi.LoginToContinueInterceptor,
+  - class org.hibernate.validator.cdi.internal.interceptor.ValidationInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000103: Enabled alternatives for Weld BeanManager for classes [bean count=2]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000104: Enabled decorator types for Weld BeanManager for classes [bean count=2]: (empty collection)
+06:24:57 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000105: Enabled interceptor types for Weld BeanManager for classes [bean count=2]: 
+  - class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor,
+  - class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNever,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequired,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew,
+  - class org.glassfish.cdi.transaction.TransactionalInterceptorSupports,
+  - class org.glassfish.soteria.cdi.AutoApplySessionInterceptor,
+  - class org.glassfish.soteria.cdi.RememberMeInterceptor,
+  - class org.glassfish.soteria.cdi.LoginToContinueInterceptor,
+  - class org.hibernate.validator.cdi.internal.interceptor.ValidationInterceptor,
+  - class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; startInitialization (622 ms)
+06:24:57 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; deployBeans 
+06:24:57 [main] DEBUG org.jboss.weld.Reflection - WELD-000620: interface javax.faces.push.Push is not declared @Target(METHOD, FIELD, PARAMETER, TYPE). Weld will use this annotation, however this may make the application unportable.
+06:24:57 [main] DEBUG org.jboss.weld.Reflection - WELD-000620: interface javax.batch.api.BatchProperty is not declared @Target(METHOD, FIELD, PARAMETER, TYPE). Weld will use this annotation, however this may make the application unportable.
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.soteria.cdi.AutoApplySessionInterceptor intercepts @AutoApplySession]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionInterceptor intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorRequired intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.jboss.weld.contexts.activator.ActivateRequestContextInterceptor intercepts @ActivateRequestContext]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorMandatory intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorSupports intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.jboss.weld.contexts.activator.CdiRequestContextActivatorInterceptor intercepts @ActivateRequestContext]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.soteria.cdi.LoginToContinueInterceptor intercepts @LoginToContinue]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorNever intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorNotSupported intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.hibernate.validator.cdi.internal.interceptor.ValidationInterceptor intercepts @MethodValidated]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.cdi.transaction.TransactionalInterceptorRequiresNew intercepts @Transactional]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000107: Interceptor: Interceptor [class org.glassfish.soteria.cdi.RememberMeInterceptor intercepts @RememberMe]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.transaction.UserTransaction] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpServletRequest
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpSession
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%ApplicationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%BoundConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%EjbRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%Conversation
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%BoundSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%RequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [java.security.Principal] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%SingletonContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%ServletContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%DependentContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%RequestContextController
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%HttpSessionDestructionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%root_classes%BoundRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000151: ProcessInjectionTarget.setInjectionTarget() called by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3: InjectionTarget for Managed Bean [class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionMapper] with qualifiers [@Any @Default] replaced by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$6@81eba6b
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000151: ProcessInjectionTarget.setInjectionTarget() called by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3: InjectionTarget for Managed Bean [class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$JaxRsParamProducer] with qualifiers [@Any @Default] replaced by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$5@df8a698
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.soteria.mechanisms.FormAuthenticationMechanism] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%BoundRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.cdi.WebsocketPushContextProducer] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%Conversation
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%ServletContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionMapper] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.soteria.identitystores.hash.Pbkdf2PasswordHashImpl] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.soteria.SecurityContextImpl] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScope] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%EjbRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [FlowBuilder] with qualifiers [@FlowBuilderParameter @Any] declared as [[UnbackedAnnotatedMethod] @Produces @FlowBuilderParameter com.sun.faces.flow.FlowDiscoveryCDIHelper.createFlowBuilder()]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%BoundConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [PushContext] with qualifiers [@Any @Push] declared as [[UnbackedAnnotatedMethod] @Produces @Push public com.sun.faces.cdi.WebsocketPushContextProducer.produce(InjectionPoint)]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.soteria.mechanisms.CustomFormAuthenticationMechanism] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.push.WebsocketChannelManager$ViewScope] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%ApplicationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.jersey.ext.cdi1x.transaction.internal.WebAppExceptionHolder] with qualifiers [@WaeQualifier @Any]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$JaxRsParamProducer] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [String] with qualifiers [@JaxRsParamQualifier @Any] declared as [[UnbackedAnnotatedMethod] @Produces @JaxRsParamQualifier public org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$JaxRsParamProducer.getParameterValue(InjectionPoint, BeanManager)]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%RequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpServletRequest
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.ibm.jbatch.container.cdi.BatchProducerBean] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpSession
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.push.WebsocketSessionManager] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%SingletonContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.push.WebsocketUserManager] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.flow.FlowDiscoveryCDIHelper] with qualifiers [@Default @Any @Named]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [JobContext] with qualifiers [@Any @Default] declared as [[UnbackedAnnotatedMethod] @Produces @Dependent public com.ibm.jbatch.container.cdi.BatchProducerBean.getJobContext()]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%DependentContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [StepContext] with qualifiers [@Any @Default] declared as [[UnbackedAnnotatedMethod] @Produces @Dependent public com.ibm.jbatch.container.cdi.BatchProducerBean.getStepContext()]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Producer Method [String] with qualifiers [@BatchProperty @Any] declared as [[UnbackedAnnotatedMethod] @Produces @Dependent @BatchProperty public com.ibm.jbatch.container.cdi.BatchProducerBean.produceProperty(InjectionPoint)]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.cdi.InjectionPointGenerator] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%BoundSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%RequestContextController
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider%HttpSessionDestructionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.transaction.UserTransaction] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [java.security.Principal] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Managed Bean [class com.sun.faces.push.WebsocketChannelManager] with qualifiers [@Any @Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.service.UserServiceImpl with qualifiers [@Any @Default]; local interfaces are [UserService]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%SingletonContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%RequestContextController
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InterceptionFactory] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpSession
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%BoundRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.EventMetadata] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%BoundConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Interceptor] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpSessionDestructionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.dao.UserDaoImpl with qualifiers [@Any @Default]; local interfaces are [UserDao]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpServletRequest
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%EjbRequestContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.transaction.UserTransaction] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Decorator] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.dao.PersonDaoImpl with qualifiers [@Any @Default]; local interfaces are [PersonDao]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpConversationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Intercepted]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.Instance] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%BoundSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%HttpSessionContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.Bean] with qualifiers [@Decorated]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [java.security.Principal] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%DependentContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.event.Event] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.service.PersonServiceImpl with qualifiers [@Any @Default]; local interfaces are [PersonService]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.service.PersonServiceRemoteImpl with qualifiers [@Any @Default]; local interfaces are []
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%Conversation
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%ApplicationContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Implicit Bean [javax.enterprise.inject.spi.InjectionPoint] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%ServletContext
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Session bean [class ar.com.dss.sga.service.UserServiceRemoteImpl with qualifiers [@Any @Default]; local interfaces are []
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%classes%RequestContext
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; deployBeans &gt; AfterBeanDiscovery 
+06:24:58 [main] DEBUG org.jboss.weld.Reflection - WELD-000604: interface javax.faces.flow.FlowScoped is not declared @Target(METHOD, FIELD, TYPE). Weld will use this annotation, however this may make the application unportable.
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000156: AfterBeanDiscovery.addContext() called by com.sun.faces.flow.FlowCDIExtension@14c84fd6 for com.sun.faces.flow.FlowCDIContext@1f63fdf4
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by com.sun.faces.flow.FlowCDIExtension@14c84fd6 for com.sun.faces.util.cdi11.CDIUtilImpl$BeanWrapper@66d774b8
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000156: AfterBeanDiscovery.addContext() called by org.glassfish.cdi.transaction.TransactionScopedContextExtension@55f0e377 for org.glassfish.cdi.transaction.TransactionScopedContextImpl@47fb7f9
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.cdi.transaction.TransactionScopedContextExtension@55f0e377 for org.glassfish.cdi.transaction.TransactionScopedCDIUtil$BeanWrapper@3a4af9a7
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension@2df593ac for org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension$3@60f6a081
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000156: AfterBeanDiscovery.addContext() called by com.sun.faces.application.view.ViewScopeExtension@6411cb24 for com.sun.faces.application.view.ViewScopeContext@4e99e262
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by com.sun.faces.application.view.ViewScopeExtension@6411cb24 for com.sun.faces.util.cdi11.CDIUtilImpl$BeanWrapper@295af581
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.jms.injection.JMSCDIExtension@69292ca6 for org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@77cbedfb
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.jms.injection.JMSCDIExtension@69292ca6 for org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@7c385f68
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.jms.injection.JMSCDIExtension@69292ca6 for org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@3141366
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by com.sun.faces.cdi.CdiExtension@28791945 for com.sun.faces.cdi.DataModelClassesMapProducer@1393c8b
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.hibernate.validator.cdi.internal.ValidationExtension@8196ff1 for ValidatorFactoryBean [id=org.hibernate.validator.cdi.internal.ValidatorFactoryBean_default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.hibernate.validator.cdi.internal.ValidationExtension@8196ff1 for ValidatorBean [id=org.hibernate.validator.cdi.internal.ValidatorBean_default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider@6e16e6c3 for org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$Hk2Bean@5d2bd45a
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000154: AfterBeanDiscovery.addBean() called by org.glassfish.soteria.cdi.CdiExtension@3d8c8ca2 for org.glassfish.soteria.cdi.CdiProducer@676d182d
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: com.sun.faces.util.cdi11.CDIUtilImpl$BeanWrapper@66d774b8
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.cdi.transaction.TransactionScopedCDIUtil$BeanWrapper@3a4af9a7
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.jersey.ext.cdi1x.servlet.internal.CdiExternalRequestScopeExtension$3@60f6a081
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: com.sun.faces.util.cdi11.CDIUtilImpl$BeanWrapper@295af581
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@77cbedfb
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@7c385f68
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.jms.injection.JMSCDIExtension$LocalPassivationCapableBean@3141366
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: com.sun.faces.cdi.DataModelClassesMapProducer@1393c8b
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: ValidatorFactoryBean [id=org.hibernate.validator.cdi.internal.ValidatorFactoryBean_default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: ValidatorBean [id=org.hibernate.validator.cdi.internal.ValidatorBean_default]
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider$Hk2Bean@5d2bd45a
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000106: Bean: org.glassfish.soteria.cdi.CdiProducer@676d182d
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; deployBeans &gt; AfterBeanDiscovery (215 ms)
+06:24:58 [main] DEBUG org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Named is missing @Target. Weld will use this annotation, however this may make the application unportable.
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; deployBeans (1111 ms)
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000100: Weld initialized. Validating beans
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; validateBeans 
+06:24:58 [main] DEBUG org.jboss.weld.Reflection - WELD-000620: interface javax.enterprise.inject.Intercepted is not declared @Target(METHOD, FIELD, PARAMETER, TYPE). Weld will use this annotation, however this may make the application unportable.
+06:24:58 [main] DEBUG org.jboss.weld.Reflection - WELD-000620: interface javax.enterprise.inject.Decorated is not declared @Target(METHOD, FIELD, PARAMETER, TYPE). Weld will use this annotation, however this may make the application unportable.
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; validateBeans &gt; AfterDeploymentValidation 
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; validateBeans &gt; AfterDeploymentValidation (2 ms)
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; validateBeans (38 ms)
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker - START bootstrap &gt; endInitialization 
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - WELD-000145: Bean identifier index built:
+  BeanIdentifierIndex [hash=-468458231, indexed=1] 
+     0: WELD%ManagedBean%classes|org.glassfish.jersey.ext.cdi1x.transaction.internal.TransactionalExceptionInterceptorProvider|com.sun.faces.push.WebsocketChannelManager|com.sun.faces.push.WebsocketChannelManager[@javax.enterprise.context.SessionScoped()]{com.sun.faces.push.WebsocketChannelManager.socketSessions[@javax.inject.Inject()];com.sun.faces.push.WebsocketChannelManager.socketUsers[@javax.inject.Inject()];com.sun.faces.push.WebsocketChannelManager.deregisterSessionScope[@javax.annotation.PreDestroy()]();}|false
+
+06:24:58 [main] DEBUG org.jboss.weld.Bootstrap - EE modules: [BeanDeploymentModule [id=classes, web=false, managers=org.jboss.weld.util.collections.Iterables$$Lambda$80/1991803494@279a8b88], BeanDeploymentModule [id=BeanDeploymentModules.DEFAULT, web=false, managers=org.jboss.weld.util.collections.Iterables$$Lambda$80/1991803494@614ad27e]]
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap &gt; endInitialization (14 ms)
+06:24:58 [main] DEBUG org.jboss.weld.BootstrapTracker -   END bootstrap (2424 ms)
+06:24:59 [main] INFO   - Abriendo contenedor embebido Glassfish
+06:24:59 [main] INFO   - Iniciando test EJB PersonaService
+</system-out>
+    <system-err>dic 07, 2018 6:19:51 AM org.glassfish.ejb.embedded.EJBContainerProviderImpl createContainer
+INFORMACIÓN: [EJBContainerProviderImpl] Using installation location C:\Program Files\glassfish5\glassfish
+dic 07, 2018 6:19:51 AM org.glassfish.ejb.embedded.EJBContainerProviderImpl createContainer
+INFORMACIÓN: [EJBContainerProviderImpl] Using config file location: file:/C:/Users/Diego/AppData/Local/Temp/domain6617667044810913024xml
+dic 07, 2018 6:19:51 AM org.glassfish.ejb.embedded.EJBContainerProviderImpl createContainer
+INFORMACIÓN: [EJBContainerProviderImpl] Using runtime class: class com.sun.enterprise.glassfish.bootstrap.StaticGlassFishRuntime
+dic 07, 2018 6:19:53 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+dic 07, 2018 6:19:53 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+dic 07, 2018 6:19:53 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+dic 07, 2018 6:19:53 AM org.glassfish.security.services.impl.authorization.AuthorizationServiceImpl initialize
+INFORMACIÓN: Authorization Service has successfully initialized.
+dic 07, 2018 6:19:53 AM org.glassfish.ha.store.spi.BackingStoreFactoryRegistry register
+INFORMACIÓN: Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry
+dic 07, 2018 6:19:53 AM com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+INFORMACIÓN: GlassFish Server Open Source Edition  5.0  (25) startup time : Embedded (1.023ms), startup services(1.575ms), total(2.598ms)
+dic 07, 2018 6:19:53 AM com.sun.jts.CosTransactions.DefaultTransactionService setServerName
+INFORMACIÓN: JTS5014: Recoverable JTS instance, serverId = [100]
+dic 07, 2018 6:19:54 AM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+INFORMACIÓN: JMXStartupService has disabled JMXConnector system
+dic 07, 2018 6:19:54 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFORMACIÓN: Grizzly Framework 2.4.1 started in: 58ms - bound to [/0.0.0.0:7676]
+dic 07, 2018 6:19:54 AM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
+INFORMACIÓN: JMXStartupService and JMXConnectors have been shut down.
+dic 07, 2018 6:19:54 AM com.sun.enterprise.v3.server.AppServerStartup stop
+INFORMACIÓN: Shutdown procedure finished
+dic 07, 2018 6:19:54 AM org.glassfish.ha.store.spi.BackingStoreFactoryRegistry register
+INFORMACIÓN: Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry
+dic 07, 2018 6:19:54 AM com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+INFORMACIÓN: GlassFish Server Open Source Edition  5.0  (25) startup time : Embedded (3.315ms), startup services(34ms), total(3.349ms)
+dic 07, 2018 6:19:54 AM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+INFORMACIÓN: JMXStartupService has disabled JMXConnector system
+dic 07, 2018 6:19:54 AM org.glassfish.ejb.embedded.EJBContainerProviderImpl skipJar
+INFORMACIÓN: ... skipping entry with a Manifest file with a special attribute: glassfish-embedded-static-shell.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding EJB module to ScatteredArchive classes
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive mysql-connector-java-8.0.12.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javax.persistence-2.2.1.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive eclipselink-2.7.3.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javax.json-api-1.1.2.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive test-classes
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive validation-api-2.0.1.Final.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive protobuf-java-2.6.0.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javaee-web-api-8.0.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive log4j-core-2.11.0.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive commonj.sdo-2.1.1.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javax.persistence-api-2.2.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hamcrest-core-1.3.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive junit-4.12.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive log4j-api-2.11.0.jar
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.EJBContainerImpl deploy
+INFORMACIÓN: [EJBContainerImpl] Deploying app: org.glassfish.embeddable.archive.ScatteredArchive@381c826c
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.EJBContainerImpl deploy
+INFORMACIÓN: [EJBContainerImpl] GlassFish status: STARTED
+dic 07, 2018 6:19:55 AM org.glassfish.ejb.embedded.EJBContainerImpl deploy
+INFORMACIÓN: [EJBContainerImpl] Deploying as a ScatteredArchive
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 13:41:51 ART 1998,
+               To: Wed Aug 22 13:41:51 ART 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 13:41:51 ART 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&amp;X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  &apos;....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Wed Aug 12 21:29:00 ART 1998,
+               To: Mon Aug 13 20:59:00 ART 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g&quot;a.*&lt;H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O.&quot;..........z.
+
+]
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.SecurityLifecycle &lt;init&gt;
+INFORMACIÓN: Java security manager is disabled.
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFORMACIÓN: Entering Security Startup Service.
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.PolicyLoader loadPolicy
+INFORMACIÓN: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.
+dic 07, 2018 6:24:42 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFORMACIÓN: Security Service(s) started successfully.
+dic 07, 2018 6:24:44 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB PersonServiceImpl: [java:global/classes/PersonServiceImpl, java:global/classes/PersonServiceImpl!ar.com.dss.sga.service.PersonService]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 13:41:51 ART 1998,
+               To: Wed Aug 22 13:41:51 ART 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 13:41:51 ART 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&amp;X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  &apos;....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Wed Aug 12 21:29:00 ART 1998,
+               To: Mon Aug 13 20:59:00 ART 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g&quot;a.*&lt;H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O.&quot;..........z.
+
+]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 13:41:51 ART 1998,
+               To: Wed Aug 22 13:41:51 ART 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 13:41:51 ART 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&amp;X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  &apos;....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Wed Aug 12 21:29:00 ART 1998,
+               To: Mon Aug 13 20:59:00 ART 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g&quot;a.*&lt;H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O.&quot;..........z.
+
+]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 13:41:51 ART 1998,
+               To: Wed Aug 22 13:41:51 ART 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 13:41:51 ART 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&amp;X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  &apos;....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]
+dic 07, 2018 6:24:45 AM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Wed Aug 12 21:29:00 ART 1998,
+               To: Mon Aug 13 20:59:00 ART 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g&quot;a.*&lt;H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O.&quot;..........z.
+
+]
+dic 07, 2018 6:24:48 AM com.sun.jts.CosTransactions.DefaultTransactionService setServerName
+INFORMACIÓN: JTS5014: Recoverable JTS instance, serverId = [3700]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB UserServiceRemoteImpl: [java:global/classes/UserServiceRemoteImpl, java:global/classes/UserServiceRemoteImpl!ar.com.dss.sga.service.UserServiceRemote]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Glassfish-specific (Non-portable) JNDI names for EJB UserServiceRemoteImpl: [ar.com.dss.sga.service.UserServiceRemote#ar.com.dss.sga.service.UserServiceRemote, ar.com.dss.sga.service.UserServiceRemote]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB PersonDaoImpl: [java:global/classes/PersonDaoImpl, java:global/classes/PersonDaoImpl!ar.com.dss.sga.dao.PersonDao]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB UserServiceImpl: [java:global/classes/UserServiceImpl!ar.com.dss.sga.service.UserService, java:global/classes/UserServiceImpl]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB UserDaoImpl: [java:global/classes/UserDaoImpl, java:global/classes/UserDaoImpl!ar.com.dss.sga.dao.UserDao]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB PersonServiceRemoteImpl: [java:global/classes/PersonServiceRemoteImpl!ar.com.dss.sga.service.PersonServiceRemote, java:global/classes/PersonServiceRemoteImpl]
+dic 07, 2018 6:24:49 AM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Glassfish-specific (Non-portable) JNDI names for EJB PersonServiceRemoteImpl: [ar.com.dss.sga.service.PersonServiceRemote, ar.com.dss.sga.service.PersonServiceRemote#ar.com.dss.sga.service.PersonServiceRemote]
+dic 07, 2018 6:24:59 AM org.glassfish.deployment.admin.DeployCommand execute
+INFORMACIÓN: classes was successfully deployed in 296.889 milliseconds.
+dic 07, 2018 6:25:00 AM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: A system exception occurred during an invocation on EJB PersonDaoImpl, method: public java.util.List ar.com.dss.sga.dao.PersonDaoImpl.listPeople()
+dic 07, 2018 6:25:00 AM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: 
+javax.ejb.TransactionRolledbackLocalException: Exception thrown from bean
+	at com.sun.ejb.containers.EJBContainerTransactionManager.checkExceptionClientTx(EJBContainerTransactionManager.java:666)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:511)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4600)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy231.listPeople(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:411)
+	at org.jboss.weld.module.ejb.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.module.ejb.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:68)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ar.com.dss.sga.dao.PersonDao$481188402$Proxy$_$$_Weld$EnterpriseProxy$.listPeople(Unknown Source)
+	at ar.com.dss.sga.service.PersonServiceImpl.listPeople(PersonServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy181.listPeople(Unknown Source)
+	at test.TestEntities.testEJBPersonService(TestEntities.java:107)
+	at test.TestEntities.testEJB(TestEntities.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: Unable to retrieve EntityManagerFactory for unitName PersonPU
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.init(EntityManagerWrapper.java:138)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper._getDelegate(EntityManagerWrapper.java:171)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.createNamedQuery(EntityManagerWrapper.java:515)
+	at ar.com.dss.sga.dao.PersonDaoImpl.listPeople(PersonDaoImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:72)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 78 more
+
+dic 07, 2018 6:25:00 AM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: A system exception occurred during an invocation on EJB PersonServiceImpl, method: public java.util.List ar.com.dss.sga.service.PersonServiceImpl.listPeople()
+dic 07, 2018 6:25:00 AM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: 
+javax.ejb.EJBTransactionRolledbackException
+	at com.sun.ejb.containers.BaseContainer.mapLocal3xException(BaseContainer.java:2376)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2158)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2078)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy231.listPeople(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:411)
+	at org.jboss.weld.module.ejb.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.module.ejb.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:68)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ar.com.dss.sga.dao.PersonDao$481188402$Proxy$_$$_Weld$EnterpriseProxy$.listPeople(Unknown Source)
+	at ar.com.dss.sga.service.PersonServiceImpl.listPeople(PersonServiceImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:88)
+	at com.sun.proxy.$Proxy181.listPeople(Unknown Source)
+	at test.TestEntities.testEJBPersonService(TestEntities.java:107)
+	at test.TestEntities.testEJB(TestEntities.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.ejb.TransactionRolledbackLocalException: Exception thrown from bean
+	at com.sun.ejb.containers.EJBContainerTransactionManager.checkExceptionClientTx(EJBContainerTransactionManager.java:666)
+	at com.sun.ejb.containers.EJBContainerTransactionManager.postInvokeTx(EJBContainerTransactionManager.java:511)
+	at com.sun.ejb.containers.BaseContainer.postInvokeTx(BaseContainer.java:4600)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2108)
+	... 80 more
+Caused by: java.lang.IllegalStateException: Unable to retrieve EntityManagerFactory for unitName PersonPU
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.init(EntityManagerWrapper.java:138)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper._getDelegate(EntityManagerWrapper.java:171)
+	at com.sun.enterprise.container.common.impl.EntityManagerWrapper.createNamedQuery(EntityManagerWrapper.java:515)
+	at ar.com.dss.sga.dao.PersonDaoImpl.listPeople(PersonDaoImpl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1081)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1153)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:4820)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:656)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:824)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:72)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:608)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doCall(SystemInterceptorProxy.java:163)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:883)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:823)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:369)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:4792)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:4780)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	... 78 more
+
+</system-err>
+  </testcase>
+</testsuite>

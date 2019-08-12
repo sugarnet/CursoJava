@@ -1,0 +1,14 @@
+clientsga\ws\PersonServiceWS.class
+clientsga\ws\DeletePerson.class
+clientsga\ws\package-info.class
+clientsga\ws\AddPersonResponse.class
+clientsga\ws\ListPeople.class
+testclientws\TestPersonServiceWS.class
+clientsga\ws\ListPeopleResponse.class
+clientsga\ws\UpdatePersonResponse.class
+clientsga\ws\AddPerson.class
+clientsga\ws\Person.class
+clientsga\ws\PersonServiceImplService.class
+clientsga\ws\UpdatePerson.class
+clientsga\ws\DeletePersonResponse.class
+clientsga\ws\ObjectFactory.class
