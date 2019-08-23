@@ -30,7 +30,7 @@ public class IntroduccionJDBC {
             Class.forName("com.mysql.jdbc.Driver");
             
             //creamos el objeto conexión
-            Connection connection = (Connection) DriverManager.getConnection(url, "root", "scifo007+");
+            Connection connection = (Connection) DriverManager.getConnection(url, "root", "admin");
             
             //creamos un objeto statement
             Statement statement = connection.createStatement();
