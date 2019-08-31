@@ -21,7 +21,7 @@ public class Conexion {
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static final String JDBC_URL = "jdbc:mysql://localhost/sga?userSSL=false";
     private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "scifo007+";
+    private static final String JDBC_PASS = "admin";
     private static Driver driver = null;
     
     public static synchronized Connection getConnection() throws SQLException{

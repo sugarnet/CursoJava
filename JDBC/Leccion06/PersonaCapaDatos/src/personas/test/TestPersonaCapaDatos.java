@@ -48,6 +48,7 @@ public class TestPersonaCapaDatos {
             PersonaDTO personaARefrescar = new PersonaDTO();
             personaARefrescar.setIdPersona(2);
             personaARefrescar.setNombre("Pepe");
+            personaARefrescar.setApellido("Sanchez");   
             personaDao.update(personaARefrescar);
             
             //mostramos los registros almacenados en BD

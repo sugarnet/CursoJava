@@ -40,6 +40,7 @@ public class IntroduccionJDBC {
             
             ResultSet resultSet = statement.executeQuery(sql);
             
+            //recorremos los registros
             while(resultSet.next()) {
                 System.out.print("id_persona: " + resultSet.getInt("id_persona"));
                 System.out.print(", nombre: " + resultSet.getString("nombre"));
