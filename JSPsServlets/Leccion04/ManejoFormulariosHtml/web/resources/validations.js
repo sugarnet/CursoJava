@@ -7,16 +7,22 @@
 function validarForm(form) {
     var user = form.usuario;
     
-    //console.log("valor user: " + user.value);
-    if(user.value === "" && user.length > 3) {
+    if(user.value === "") {
         alert("Debe proporcionar un nombre de usuario");
         user.focus();
         user.select();
         return false;
     }
     
+    if (user.value.length <= 3) {
+        alert("Debe proporcionar un nombre de usuario mayor a 3 caracteres");
+        user.focus();
+        user.select();
+        return false;
+    }
+    
     var pass = form.password;
-    if(pass.value === "" || pass.length < 3) {
+    if(pass.value === "" || pass.value.length < 3) {
         alert("Debe proporcionar al menos 3 caracteres");
         pass.focus();
         pass.select();

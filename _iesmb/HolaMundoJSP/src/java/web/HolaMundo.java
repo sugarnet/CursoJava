@@ -7,7 +7,10 @@ package web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +22,26 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "HolaMundo", urlPatterns = {"/HolaMundo"})
 public class HolaMundo extends HttpServlet {
+    
+    private static final Logger LOG = Logger.getLogger(HolaMundo.class.getName());
+    
+    public HolaMundo() {
+        LOG.info("Desde el constructor HolaMundo()...");
+    }
+
+    @Override
+    public void init() throws ServletException {
+        LOG.info("Desde el init()...");
+        super.init(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        LOG.info("Desde el service()...");
+        super.service(req, res); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,7 +60,7 @@ public class HolaMundo extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet HolaMundo</title>");            
+            out.println("<title>Servlet HolaMundo</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet HolaMundo at " + request.getContextPath() + "</h1>");
@@ -47,7 +70,7 @@ public class HolaMundo extends HttpServlet {
             out.println("</html>");
         }
     }
-
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
