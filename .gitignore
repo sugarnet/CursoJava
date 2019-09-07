@@ -1,4 +1,6 @@
-nbproject/
-build/
-nbbuild.xml
-manifest.mf
+**/nbproject
+**/build
+**/target
+**/nbbuild.xml
+**/nb-configuration.xml
+**/manifest.mf
