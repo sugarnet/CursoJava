@@ -10,6 +10,19 @@ and open the template in the editor.
         <title>Hola Mundo con JSF</title>
     </head>
     <body>
+        <!--
         <h:outputLabel value="Hola Mundo desde JSF" />
+        !-->
+        
+        <h:form>
+            <table>
+                <tr>
+                    <td><h:outputLabel for="nombre" value="Nommbre:"></h:outputLabel></td>
+                    <td><h:inputText id="nombre" value="#{candidato.nombre}"></h:inputText></td>
+                    <td><h:message for="nombre"></h:message></td>
+                </tr>
+            </table>
+            <h:commandButton action="#{vacanteForm.enviar}" value="Enviar"></h:commandButton>
+        </h:form>
     </body>
 </html>

@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package beans.model;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
+/**
+ *
+ * @author Almis
+ */
+@Named
+@RequestScoped
+public class Candidato {
+    private String nombre;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
+}
