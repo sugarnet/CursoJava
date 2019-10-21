@@ -5,30 +5,27 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.exceptions;
 
-public class UsuarioDaoException extends DaoException
-{
-	/**
-	 * Method 'UsuarioDaoException'
-	 * 
-	 * @param message
-	 */
-	public UsuarioDaoException(String message)
-	{
-		super(message);
-	}
+public class UsuarioDaoException extends DaoException {
 
-	/**
-	 * Method 'UsuarioDaoException'
-	 * 
-	 * @param message
-	 * @param cause
-	 */
-	public UsuarioDaoException(String message, Throwable cause)
-	{
-		super(message, cause);
-	}
+    /**
+     * Method 'UsuarioDaoException'
+     *
+     * @param message
+     */
+    public UsuarioDaoException(String message) {
+        super(message);
+    }
+
+    /**
+     * Method 'UsuarioDaoException'
+     *
+     * @param message
+     * @param cause
+     */
+    public UsuarioDaoException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
 }

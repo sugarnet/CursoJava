@@ -5,7 +5,6 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.dto;
 
 import sga.eis.dao.*;
@@ -14,173 +13,162 @@ import sga.eis.exceptions.*;
 import java.io.Serializable;
 import java.util.*;
 
-public class Persona implements Serializable
-{
-	/** 
-	 * This attribute maps to the column id_persona in the persona table.
-	 */
-	protected Integer idPersona;
+public class Persona implements Serializable {
 
-	/** 
-	 * This attribute maps to the column nombre in the persona table.
-	 */
-	protected String nombre;
+    /**
+     * This attribute maps to the column id_persona in the persona table.
+     */
+    protected Integer idPersona;
 
-	/** 
-	 * This attribute maps to the column apellido in the persona table.
-	 */
-	protected String apellido;
+    /**
+     * This attribute maps to the column nombre in the persona table.
+     */
+    protected String nombre;
 
-	/**
-	 * Method 'Persona'
-	 * 
-	 */
-	public Persona()
-	{
-	}
+    /**
+     * This attribute maps to the column apellido in the persona table.
+     */
+    protected String apellido;
 
-	/**
-	 * Method 'getIdPersona'
-	 * 
-	 * @return Integer
-	 */
-	public Integer getIdPersona()
-	{
-		return idPersona;
-	}
+    /**
+     * Method 'Persona'
+     *
+     */
+    public Persona() {
+    }
 
-	/**
-	 * Method 'setIdPersona'
-	 * 
-	 * @param idPersona
-	 */
-	public void setIdPersona(Integer idPersona)
-	{
-		this.idPersona = idPersona;
-	}
+    /**
+     * Method 'getIdPersona'
+     *
+     * @return Integer
+     */
+    public Integer getIdPersona() {
+        return idPersona;
+    }
 
-	/**
-	 * Method 'getNombre'
-	 * 
-	 * @return String
-	 */
-	public String getNombre()
-	{
-		return nombre;
-	}
+    /**
+     * Method 'setIdPersona'
+     *
+     * @param idPersona
+     */
+    public void setIdPersona(Integer idPersona) {
+        this.idPersona = idPersona;
+    }
 
-	/**
-	 * Method 'setNombre'
-	 * 
-	 * @param nombre
-	 */
-	public void setNombre(String nombre)
-	{
-		this.nombre = nombre;
-	}
+    /**
+     * Method 'getNombre'
+     *
+     * @return String
+     */
+    public String getNombre() {
+        return nombre;
+    }
 
-	/**
-	 * Method 'getApellido'
-	 * 
-	 * @return String
-	 */
-	public String getApellido()
-	{
-		return apellido;
-	}
+    /**
+     * Method 'setNombre'
+     *
+     * @param nombre
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-	/**
-	 * Method 'setApellido'
-	 * 
-	 * @param apellido
-	 */
-	public void setApellido(String apellido)
-	{
-		this.apellido = apellido;
-	}
+    /**
+     * Method 'getApellido'
+     *
+     * @return String
+     */
+    public String getApellido() {
+        return apellido;
+    }
 
-	/**
-	 * Method 'equals'
-	 * 
-	 * @param _other
-	 * @return boolean
-	 */
-	public boolean equals(Object _other)
-	{
-		if (_other == null) {
-			return false;
-		}
-		
-		if (_other == this) {
-			return true;
-		}
-		
-		if (!(_other instanceof Persona)) {
-			return false;
-		}
-		
-		final Persona _cast = (Persona) _other;
-		if (idPersona == null ? _cast.idPersona != idPersona : !idPersona.equals( _cast.idPersona )) {
-			return false;
-		}
-		
-		if (nombre == null ? _cast.nombre != nombre : !nombre.equals( _cast.nombre )) {
-			return false;
-		}
-		
-		if (apellido == null ? _cast.apellido != apellido : !apellido.equals( _cast.apellido )) {
-			return false;
-		}
-		
-		return true;
-	}
+    /**
+     * Method 'setApellido'
+     *
+     * @param apellido
+     */
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
-	/**
-	 * Method 'hashCode'
-	 * 
-	 * @return int
-	 */
-	public int hashCode()
-	{
-		int _hashCode = 0;
-		if (idPersona != null) {
-			_hashCode = 29 * _hashCode + idPersona.hashCode();
-		}
-		
-		if (nombre != null) {
-			_hashCode = 29 * _hashCode + nombre.hashCode();
-		}
-		
-		if (apellido != null) {
-			_hashCode = 29 * _hashCode + apellido.hashCode();
-		}
-		
-		return _hashCode;
-	}
+    /**
+     * Method 'equals'
+     *
+     * @param _other
+     * @return boolean
+     */
+    public boolean equals(Object _other) {
+        if (_other == null) {
+            return false;
+        }
 
-	/**
-	 * Method 'createPk'
-	 * 
-	 * @return PersonaPk
-	 */
-	public PersonaPk createPk()
-	{
-		return new PersonaPk(idPersona);
-	}
+        if (_other == this) {
+            return true;
+        }
 
-	/**
-	 * Method 'toString'
-	 * 
-	 * @return String
-	 */
-	public String toString()
-	{
-		StringBuffer ret = new StringBuffer();
-		ret.append( "ap.eis.dto.Persona: " );
-		ret.append( "idPersona=" + idPersona );
-		ret.append( ", nombre=" + nombre );
-		ret.append( ", apellido=" + apellido );
-		return ret.toString();
-	}
+        if (!(_other instanceof Persona)) {
+            return false;
+        }
+
+        final Persona _cast = (Persona) _other;
+        if (idPersona == null ? _cast.idPersona != idPersona : !idPersona.equals(_cast.idPersona)) {
+            return false;
+        }
+
+        if (nombre == null ? _cast.nombre != nombre : !nombre.equals(_cast.nombre)) {
+            return false;
+        }
+
+        if (apellido == null ? _cast.apellido != apellido : !apellido.equals(_cast.apellido)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Method 'hashCode'
+     *
+     * @return int
+     */
+    public int hashCode() {
+        int _hashCode = 0;
+        if (idPersona != null) {
+            _hashCode = 29 * _hashCode + idPersona.hashCode();
+        }
+
+        if (nombre != null) {
+            _hashCode = 29 * _hashCode + nombre.hashCode();
+        }
+
+        if (apellido != null) {
+            _hashCode = 29 * _hashCode + apellido.hashCode();
+        }
+
+        return _hashCode;
+    }
+
+    /**
+     * Method 'createPk'
+     *
+     * @return PersonaPk
+     */
+    public PersonaPk createPk() {
+        return new PersonaPk(idPersona);
+    }
+
+    /**
+     * Method 'toString'
+     *
+     * @return String
+     */
+    public String toString() {
+        StringBuffer ret = new StringBuffer();
+        ret.append("ap.eis.dto.Persona: ");
+        ret.append("idPersona=" + idPersona);
+        ret.append(", nombre=" + nombre);
+        ret.append(", apellido=" + apellido);
+        return ret.toString();
+    }
 
 }

@@ -5,108 +5,98 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.dto;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
 
-/** 
+/**
  * This class represents the primary key of the usuario table.
  */
-public class UsuarioPk implements Serializable
-{
-	protected Integer idUsuario;
+public class UsuarioPk implements Serializable {
 
-	/** 
-	 * Sets the value of idUsuario
-	 */
-	public void setIdUsuario(Integer idUsuario)
-	{
-		this.idUsuario = idUsuario;
-	}
+    protected Integer idUsuario;
 
-	/** 
-	 * Gets the value of idUsuario
-	 */
-	public Integer getIdUsuario()
-	{
-		return idUsuario;
-	}
+    /**
+     * Sets the value of idUsuario
+     */
+    public void setIdUsuario(Integer idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
-	/**
-	 * Method 'UsuarioPk'
-	 * 
-	 */
-	public UsuarioPk()
-	{
-	}
+    /**
+     * Gets the value of idUsuario
+     */
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
 
-	/**
-	 * Method 'UsuarioPk'
-	 * 
-	 * @param idUsuario
-	 */
-	public UsuarioPk(final Integer idUsuario)
-	{
-		this.idUsuario = idUsuario;
-	}
+    /**
+     * Method 'UsuarioPk'
+     *
+     */
+    public UsuarioPk() {
+    }
 
-	/**
-	 * Method 'equals'
-	 * 
-	 * @param _other
-	 * @return boolean
-	 */
-	public boolean equals(Object _other)
-	{
-		if (_other == null) {
-			return false;
-		}
-		
-		if (_other == this) {
-			return true;
-		}
-		
-		if (!(_other instanceof UsuarioPk)) {
-			return false;
-		}
-		
-		final UsuarioPk _cast = (UsuarioPk) _other;
-		if (idUsuario == null ? _cast.idUsuario != idUsuario : !idUsuario.equals( _cast.idUsuario )) {
-			return false;
-		}
-		
-		return true;
-	}
+    /**
+     * Method 'UsuarioPk'
+     *
+     * @param idUsuario
+     */
+    public UsuarioPk(final Integer idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
-	/**
-	 * Method 'hashCode'
-	 * 
-	 * @return int
-	 */
-	public int hashCode()
-	{
-		int _hashCode = 0;
-		if (idUsuario != null) {
-			_hashCode = 29 * _hashCode + idUsuario.hashCode();
-		}
-		
-		return _hashCode;
-	}
+    /**
+     * Method 'equals'
+     *
+     * @param _other
+     * @return boolean
+     */
+    public boolean equals(Object _other) {
+        if (_other == null) {
+            return false;
+        }
 
-	/**
-	 * Method 'toString'
-	 * 
-	 * @return String
-	 */
-	public String toString()
-	{
-		StringBuffer ret = new StringBuffer();
-		ret.append( "ap.eis.dto.UsuarioPk: " );
-		ret.append( "idUsuario=" + idUsuario );
-		return ret.toString();
-	}
+        if (_other == this) {
+            return true;
+        }
+
+        if (!(_other instanceof UsuarioPk)) {
+            return false;
+        }
+
+        final UsuarioPk _cast = (UsuarioPk) _other;
+        if (idUsuario == null ? _cast.idUsuario != idUsuario : !idUsuario.equals(_cast.idUsuario)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Method 'hashCode'
+     *
+     * @return int
+     */
+    public int hashCode() {
+        int _hashCode = 0;
+        if (idUsuario != null) {
+            _hashCode = 29 * _hashCode + idUsuario.hashCode();
+        }
+
+        return _hashCode;
+    }
+
+    /**
+     * Method 'toString'
+     *
+     * @return String
+     */
+    public String toString() {
+        StringBuffer ret = new StringBuffer();
+        ret.append("ap.eis.dto.UsuarioPk: ");
+        ret.append("idUsuario=" + idUsuario);
+        return ret.toString();
+    }
 
 }

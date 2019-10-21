@@ -53,12 +53,10 @@
 </html>
 
 <script>
-  <!--
   function sf(){
 
     document.form1.username.value = "";
     document.form1.password.value = "";
     document.form1.username.focus();
   }
-  -->
 </script>

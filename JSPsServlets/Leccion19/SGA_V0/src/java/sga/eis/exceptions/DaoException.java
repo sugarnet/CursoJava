@@ -5,43 +5,39 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.exceptions;
 
-public class DaoException extends Exception
-{
-	protected Throwable throwable;
+public class DaoException extends Exception {
 
-	/**
-	 * Method 'DaoException'
-	 * 
-	 * @param message
-	 */
-	public DaoException(String message)
-	{
-		super(message);
-	}
+    protected Throwable throwable;
 
-	/**
-	 * Method 'DaoException'
-	 * 
-	 * @param message
-	 * @param throwable
-	 */
-	public DaoException(String message, Throwable throwable)
-	{
-		super(message);
-		this.throwable = throwable;
-	}
+    /**
+     * Method 'DaoException'
+     *
+     * @param message
+     */
+    public DaoException(String message) {
+        super(message);
+    }
 
-	/**
-	 * Method 'getCause'
-	 * 
-	 * @return Throwable
-	 */
-	public Throwable getCause()
-	{
-		return throwable;
-	}
+    /**
+     * Method 'DaoException'
+     *
+     * @param message
+     * @param throwable
+     */
+    public DaoException(String message, Throwable throwable) {
+        super(message);
+        this.throwable = throwable;
+    }
+
+    /**
+     * Method 'getCause'
+     *
+     * @return Throwable
+     */
+    public Throwable getCause() {
+        return throwable;
+    }
 
 }

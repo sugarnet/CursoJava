@@ -5,34 +5,31 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.factory;
 
 import java.sql.Connection;
 import sga.eis.dao.*;
 import sga.eis.jdbc.*;
 
-public class PersonaDaoFactory
-{
-	/**
-	 * Method 'create'
-	 * 
-	 * @return PersonaDao
-	 */
-	public static PersonaDao create()
-	{
-		return new PersonaDaoImpl();
-	}
+public class PersonaDaoFactory {
 
-	/**
-	 * Method 'create'
-	 * 
-	 * @param conn
-	 * @return PersonaDao
-	 */
-	public static PersonaDao create(Connection conn)
-	{
-		return new PersonaDaoImpl( conn );
-	}
+    /**
+     * Method 'create'
+     *
+     * @return PersonaDao
+     */
+    public static PersonaDao create() {
+        return new PersonaDaoImpl();
+    }
+
+    /**
+     * Method 'create'
+     *
+     * @param conn
+     * @return PersonaDao
+     */
+    public static PersonaDao create(Connection conn) {
+        return new PersonaDaoImpl(conn);
+    }
 
 }
