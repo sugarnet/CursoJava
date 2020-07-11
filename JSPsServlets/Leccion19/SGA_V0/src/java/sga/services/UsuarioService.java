@@ -8,6 +8,6 @@ import sga.eis.dto.Usuario;
  */
 public interface UsuarioService {
 
-    public boolean usuarioExistente(Usuario usuario) ;
-    
+    public boolean usuarioExistente(Usuario usuario);
+
 }

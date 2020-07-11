@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/estilos.css"/>
 
 <script language="javascript" src="${pageContext.request.contextPath}/resources/funciones.js"></script>
-<!--Incluimos el logo de global mentoring -->
 
 <div class="titulo">
   Sistema de Gesti&oacute;n

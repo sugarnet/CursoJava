@@ -5,67 +5,72 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.dao;
 
 import sga.eis.dto.*;
 import sga.eis.exceptions.*;
 import java.sql.Connection;
 
-public interface PersonaDao
-{
-	/** 
-	 * Inserts a new row in the persona table.
-	 */
-	public PersonaPk insert(Persona dto) throws PersonaDaoException;
+public interface PersonaDao {
 
-	/** 
-	 * Updates a single row in the persona table.
-	 */
-	public void update(PersonaPk pk, Persona dto) throws PersonaDaoException;
+    /**
+     * Inserts a new row in the persona table.
+     * @return 
+     * @param dto
+     * @throws PersonaDaoException
+     */
+    public PersonaPk insert(Persona dto) throws PersonaDaoException;
 
-	/** 
-	 * Deletes a single row in the persona table.
-	 */
-	public void delete(PersonaPk pk) throws PersonaDaoException;
+    /**
+     * Updates a single row in the persona table.
+     */
+    public void update(PersonaPk pk, Persona dto) throws PersonaDaoException;
 
-	/** 
-	 * Returns the rows from the persona table that matches the specified primary-key value.
-	 */
-	public Persona findByPrimaryKey(PersonaPk pk) throws PersonaDaoException;
+    /**
+     * Deletes a single row in the persona table.
+     */
+    public void delete(PersonaPk pk) throws PersonaDaoException;
 
-	/** 
-	 * Returns all rows from the persona table that match the criteria 'id_persona = :idPersona'.
-	 */
-	public Persona findByPrimaryKey(Integer idPersona) throws PersonaDaoException;
+    /**
+     * Returns the rows from the persona table that matches the specified
+     * primary-key value.
+     */
+    public Persona findByPrimaryKey(PersonaPk pk) throws PersonaDaoException;
 
-	/** 
-	 * Returns all rows from the persona table that match the criteria ''.
-	 */
-	public Persona[] findAll() throws PersonaDaoException;
+    /**
+     * Returns all rows from the persona table that match the criteria
+     * 'id_persona = :idPersona'.
+     */
+    public Persona findByPrimaryKey(Integer idPersona) throws PersonaDaoException;
 
-	/** 
-	 * Sets the value of maxRows
-	 */
-	public void setMaxRows(int maxRows);
+    /**
+     * Returns all rows from the persona table that match the criteria ''.
+     */
+    public Persona[] findAll() throws PersonaDaoException;
 
-	/** 
-	 * Gets the value of maxRows
-	 */
-	public int getMaxRows();
+    /**
+     * Sets the value of maxRows
+     */
+    public void setMaxRows(int maxRows);
 
-	/** 
-	 * Returns all rows from the persona table that match the specified arbitrary SQL statement
-	 */
-	public Persona[] findByDynamicSelect(String sql, Object[] sqlParams) throws PersonaDaoException;
+    /**
+     * Gets the value of maxRows
+     */
+    public int getMaxRows();
 
-	/** 
-	 * Returns all rows from the persona table that match the specified arbitrary SQL statement
-	 */
-	public Persona[] findByDynamicWhere(String sql, Object[] sqlParams) throws PersonaDaoException;
+    /**
+     * Returns all rows from the persona table that match the specified
+     * arbitrary SQL statement
+     */
+    public Persona[] findByDynamicSelect(String sql, Object[] sqlParams) throws PersonaDaoException;
 
+    /**
+     * Returns all rows from the persona table that match the specified
+     * arbitrary SQL statement
+     */
+    public Persona[] findByDynamicWhere(String sql, Object[] sqlParams) throws PersonaDaoException;
 
-  public Connection getUserConn();
+    public Connection getUserConn();
 
-  public void setUserConn(Connection userConn);
+    public void setUserConn(Connection userConn);
 }

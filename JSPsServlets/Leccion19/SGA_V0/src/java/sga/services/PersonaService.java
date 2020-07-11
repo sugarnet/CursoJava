@@ -9,12 +9,12 @@ import java.util.List;
  */
 public interface PersonaService {
 
-  public List<Persona> getAllPersonas();
+    public List<Persona> getAllPersonas();
 
-  public Persona getPersonaById(Integer idPersona);
+    public Persona getPersonaById(Integer idPersona);
 
-  public boolean eliminarPersonas(List<Integer> idPersonas);
+    public boolean eliminarPersonas(List<Integer> idPersonas);
 
-  public boolean guardarPersona(Persona persona);
+    public boolean guardarPersona(Persona persona);
 
 }

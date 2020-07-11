@@ -8,14 +8,12 @@ import java.sql.*;
  *
  * This is a customizable template within FireStorm/DAO.
  */
-public class AbstractDAO
-{
+public class AbstractDAO {
 
     public byte[] getBlobColumn(ResultSet rs, int columnIndex)
-            throws SQLException
-    {
+            throws SQLException {
         try {
-            Blob blob = rs.getBlob( columnIndex );
+            Blob blob = rs.getBlob(columnIndex);
             if (blob == null) {
                 return null;
             }
@@ -25,38 +23,33 @@ public class AbstractDAO
 
             if (is == null) {
                 return null;
-            }
-            else {
-                byte buffer[] = new byte[ 64 ];
-                int c = is.read( buffer );
-                while (c>0) {
-                    bos.write( buffer, 0, c );
-                    c = is.read( buffer );
+            } else {
+                byte buffer[] = new byte[64];
+                int c = is.read(buffer);
+                while (c > 0) {
+                    bos.write(buffer, 0, c);
+                    c = is.read(buffer);
                 }
                 return bos.toByteArray();
             }
-        }
-        catch (IOException e) {
-            throw new SQLException( "Failed to read BLOB column due to IOException: " + e.getMessage() );
+        } catch (IOException e) {
+            throw new SQLException("Failed to read BLOB column due to IOException: " + e.getMessage());
         }
     }
 
     public void setBlobColumn(PreparedStatement stmt, int parameterIndex, byte[] value)
-            throws SQLException
-    {
+            throws SQLException {
         if (value == null) {
-            stmt.setNull( parameterIndex, Types.BLOB );
-        }
-        else {
-            stmt.setBinaryStream( parameterIndex, new ByteArrayInputStream(value), value.length );
+            stmt.setNull(parameterIndex, Types.BLOB);
+        } else {
+            stmt.setBinaryStream(parameterIndex, new ByteArrayInputStream(value), value.length);
         }
     }
 
     public String getClobColumn(ResultSet rs, int columnIndex)
-        throws SQLException
-    {
+            throws SQLException {
         try {
-            Clob clob = rs.getClob( columnIndex );
+            Clob clob = rs.getClob(columnIndex);
             if (clob == null) {
                 return null;
             }
@@ -66,30 +59,26 @@ public class AbstractDAO
 
             if (is == null) {
                 return null;
-            }
-            else {
-                byte buffer[] = new byte[ 64 ];
-                int c = is.read( buffer );
-                while (c>0) {
-                    ret.append( new String(buffer, 0, c) );
-                    c = is.read( buffer );
+            } else {
+                byte buffer[] = new byte[64];
+                int c = is.read(buffer);
+                while (c > 0) {
+                    ret.append(new String(buffer, 0, c));
+                    c = is.read(buffer);
                 }
                 return ret.toString();
             }
-        }
-        catch (IOException e) {
-            throw new SQLException( "Failed to read CLOB column due to IOException: " + e.getMessage() );
+        } catch (IOException e) {
+            throw new SQLException("Failed to read CLOB column due to IOException: " + e.getMessage());
         }
     }
 
     public void setClobColumn(PreparedStatement stmt, int parameterIndex, String value)
-        throws SQLException
-    {
+            throws SQLException {
         if (value == null) {
-            stmt.setNull( parameterIndex, Types.CLOB );
-        }
-        else {
-            stmt.setAsciiStream( parameterIndex, new ByteArrayInputStream(value.getBytes()), value.length() );
+            stmt.setNull(parameterIndex, Types.CLOB);
+        } else {
+            stmt.setAsciiStream(parameterIndex, new ByteArrayInputStream(value.getBytes()), value.length());
         }
     }
 }

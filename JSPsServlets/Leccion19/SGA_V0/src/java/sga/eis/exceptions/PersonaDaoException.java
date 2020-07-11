@@ -5,30 +5,27 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.exceptions;
 
-public class PersonaDaoException extends DaoException
-{
-	/**
-	 * Method 'PersonaDaoException'
-	 * 
-	 * @param message
-	 */
-	public PersonaDaoException(String message)
-	{
-		super(message);
-	}
+public class PersonaDaoException extends DaoException {
 
-	/**
-	 * Method 'PersonaDaoException'
-	 * 
-	 * @param message
-	 * @param cause
-	 */
-	public PersonaDaoException(String message, Throwable cause)
-	{
-		super(message, cause);
-	}
+    /**
+     * Method 'PersonaDaoException'
+     *
+     * @param message
+     */
+    public PersonaDaoException(String message) {
+        super(message);
+    }
+
+    /**
+     * Method 'PersonaDaoException'
+     *
+     * @param message
+     * @param cause
+     */
+    public PersonaDaoException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
 }

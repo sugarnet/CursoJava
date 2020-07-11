@@ -178,3 +178,9 @@ a:hover{
   padding-right: 15px;
   color:#f1f5e2;
 }
+
+span {
+  text-decoration:none;
+  color:#77902f;
+  background-color:transparent;
+}
