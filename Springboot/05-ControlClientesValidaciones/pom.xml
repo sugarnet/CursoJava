@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ar.com.dds</groupId>
-    <artifactId>HolaMundoSpringData</artifactId>
+    <artifactId>05-ControlClientesValidaciones</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>HolaMundoSpringData</name>
+    <name>05-ControlClientesValidaciones</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -58,6 +58,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
     </dependencies>
 

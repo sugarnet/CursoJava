@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ar.com.dds</groupId>
-	<artifactId>HolaMundoThymeleaf</artifactId>
+	<artifactId>01-HolaMundo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HolaMundoThymeleaf</name>
+	<name>01-HolaMundo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
