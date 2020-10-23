@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ar.com.dds</groupId>
-    <artifactId>06-ControlClientesTemplates</artifactId>
+    <artifactId>07-ControlClientesInternacionalizacionMensajes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>06-ControlClientesTemplates</name>
+    <name>07-ControlClientesInternacionalizacionMensajes</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
