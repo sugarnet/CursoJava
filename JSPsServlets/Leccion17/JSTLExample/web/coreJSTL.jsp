@@ -34,7 +34,7 @@
             
         <br>
         
-        <c:if test="${Objects.nonNull(param.option)}">
+        <c:if test="${param.option != null}">
             <c:choose>
                 <c:when test="${param.option == 1}">
                     <br>Option 1 selected<br>
